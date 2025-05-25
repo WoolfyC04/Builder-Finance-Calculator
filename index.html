@@ -669,7 +669,13 @@
         </div>
     </div>
 
-    <script>
+    <script type="text/javascript">
+        // Ensure DOM is loaded before running scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleInvestorFields();
+            calculateComparison();
+        });
+
         function toggleInvestorFields() {
             const structure = document.getElementById('investorStructure').value;
             
@@ -834,7 +840,4 @@
             }
             document.getElementById('roi-description').textContent = roiDescription;
         }
-
-        // Initialize calculation on page load
-        toggleInvestorFields();
-        calculateComparison();
+    </script>
