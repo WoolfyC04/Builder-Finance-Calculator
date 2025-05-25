@@ -410,14 +410,14 @@
                                 Expected Sale Price
                                 <span class="label-help">What you plan to sell the house for</span>
                             </label>
-                            <input type="number" id="projectValue" value="500000" oninput="calculateComparison()">
+                            <input type="number" id="projectValue" value="500000">
                         </div>
                         <div class="form-field">
                             <label for="totalCost">
                                 Total Build Cost
                                 <span class="label-help">All costs including land, materials, labor</span>
                             </label>
-                            <input type="number" id="totalCost" value="400000" oninput="calculateComparison()">
+                            <input type="number" id="totalCost" value="400000">
                         </div>
                     </div>
                     <div class="form-row">
@@ -426,14 +426,14 @@
                                 Build Timeline
                                 <span class="label-help">How many months to complete</span>
                             </label>
-                            <input type="number" id="constructionTime" value="8" oninput="calculateComparison()">
+                            <input type="number" id="constructionTime" value="8">
                         </div>
                         <div class="form-field">
                             <label for="builderEquity">
                                 Your Cash Investment
                                 <span class="label-help">How much of your own money you're putting in</span>
                             </label>
-                            <input type="number" id="builderEquity" value="80000" oninput="calculateComparison()">
+                            <input type="number" id="builderEquity" value="80000">
                         </div>
                     </div>
                     
@@ -451,14 +451,14 @@
                                 Lender Name
                                 <span class="label-help">Your bank or construction lender</span>
                             </label>
-                            <input type="text" id="lenderName" value="Construction Lender" oninput="calculateComparison()">
+                            <input type="text" id="lenderName" value="Construction Lender">
                         </div>
                         <div class="form-field">
                             <label for="lenderLoanAmount">
                                 Loan Amount
                                 <span class="label-help">How much they'll lend you</span>
                             </label>
-                            <input type="number" id="lenderLoanAmount" value="320000" oninput="calculateComparison()">
+                            <input type="number" id="lenderLoanAmount" value="320000">
                         </div>
                     </div>
                     <div class="form-row">
@@ -467,14 +467,14 @@
                                 Interest Rate (%)
                                 <span class="label-help">Annual interest rate</span>
                             </label>
-                            <input type="number" id="lenderRate" value="9.5" step="0.1" oninput="calculateComparison()">
+                            <input type="number" id="lenderRate" value="9.5" step="0.1">
                         </div>
                         <div class="form-field">
                             <label for="lenderPoints">
                                 Origination Fee (%)
                                 <span class="label-help">Upfront fee as % of loan amount</span>
                             </label>
-                            <input type="number" id="lenderPoints" value="2" step="0.1" oninput="calculateComparison()">
+                            <input type="number" id="lenderPoints" value="2" step="0.1">
                         </div>
                     </div>
                     <div class="form-row">
@@ -483,14 +483,14 @@
                                 Other Fees
                                 <span class="label-help">Appraisal, underwriting, etc.</span>
                             </label>
-                            <input type="number" id="lenderFees" value="1500" oninput="calculateComparison()">
+                            <input type="number" id="lenderFees" value="1500">
                         </div>
                         <div class="form-field">
                             <label for="lenderTerm">
                                 Loan Term (months)
                                 <span class="label-help">How long you have to pay it back</span>
                             </label>
-                            <input type="number" id="lenderTerm" value="12" oninput="calculateComparison()">
+                            <input type="number" id="lenderTerm" value="12">
                         </div>
                     </div>
                 </div>
@@ -503,7 +503,7 @@
                                 How Does Your Investor Get Paid?
                                 <span class="label-help">Choose the structure they offered</span>
                             </label>
-                            <select id="investorStructure" onchange="toggleInvestorFields()">
+                            <select id="investorStructure">
                                 <option value="profit-split">Split the Profit (Most Common)</option>
                                 <option value="interest-only">Interest + Fees Only</option>
                                 <option value="hybrid">Interest + Some Profit Share</option>
@@ -514,7 +514,7 @@
                                 Investor's Money
                                 <span class="label-help">How much they're putting in</span>
                             </label>
-                            <input type="number" id="investorLoanAmount" value="320000" oninput="calculateComparison()">
+                            <input type="number" id="investorLoanAmount" value="320000">
                         </div>
                     </div>
                     
@@ -531,14 +531,14 @@
                                         Investor's Share of Profit (%)
                                         <span class="label-help">What % of profit goes to them</span>
                                     </label>
-                                    <input type="number" id="profitSplitPercent" value="50" step="5" oninput="calculateComparison()">
+                                    <input type="number" id="profitSplitPercent" value="50" step="5">
                                 </div>
                                 <div class="form-field">
                                     <label for="guaranteedReturn">
                                         Guaranteed Minimum Return (%)
                                         <span class="label-help">Optional minimum they get regardless</span>
                                     </label>
-                                    <input type="number" id="guaranteedReturn" value="0" step="0.5" oninput="calculateComparison()">
+                                    <input type="number" id="guaranteedReturn" value="0" step="0.5">
                                 </div>
                             </div>
                         </div>
@@ -555,14 +555,14 @@
                                         Interest Rate (%)
                                         <span class="label-help">Annual interest rate they're charging</span>
                                     </label>
-                                    <input type="number" id="investorRate" value="12" step="0.5" oninput="calculateComparison()">
+                                    <input type="number" id="investorRate" value="12" step="0.5">
                                 </div>
                                 <div class="form-field">
                                     <label for="investorPoints">
                                         Upfront Fee (%)
                                         <span class="label-help">Points or origination fee</span>
                                     </label>
-                                    <input type="number" id="investorPoints" value="2" step="0.5" oninput="calculateComparison()">
+                                    <input type="number" id="investorPoints" value="2" step="0.5">
                                 </div>
                             </div>
                         </div>
@@ -579,14 +579,14 @@
                                         Interest Rate (%)
                                         <span class="label-help">Annual interest they charge</span>
                                     </label>
-                                    <input type="number" id="hybridRate" value="8" step="0.5" oninput="calculateComparison()">
+                                    <input type="number" id="hybridRate" value="8" step="0.5">
                                 </div>
                                 <div class="form-field">
                                     <label for="hybridProfitSplit">
                                         Their Profit Share (%)
                                         <span class="label-help">% of profit they also get</span>
                                     </label>
-                                    <input type="number" id="hybridProfitSplit" value="25" step="5" oninput="calculateComparison()">
+                                    <input type="number" id="hybridProfitSplit" value="25" step="5">
                                 </div>
                             </div>
                         </div>
@@ -598,13 +598,13 @@
                                 Other Fees
                                 <span class="label-help">Legal, due diligence, etc.</span>
                             </label>
-                            <input type="number" id="investorFees" value="500" oninput="calculateComparison()">
+                            <input type="number" id="investorFees" value="500">
                         </div>
                     </div>
                 </div>
             </div>
             
-            <button class="calculate-btn" onclick="calculateComparison()">🔍 Show Me The Numbers</button>
+            <button class="calculate-btn" onclick="calculate()">🔍 Show Me The Numbers</button>
             
             <div class="comparison-section">
                 <div class="results-header">
@@ -669,15 +669,9 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        // Ensure DOM is loaded before running scripts
-        document.addEventListener('DOMContentLoaded', function() {
-            toggleInvestorFields();
-            calculateComparison();
-        });
-
+    <script>
         function toggleInvestorFields() {
-            const structure = document.getElementById('investorStructure').value;
+            var structure = document.getElementById('investorStructure').value;
             
             // Hide all fields first
             document.getElementById('profit-split-fields').classList.add('hidden');
@@ -687,90 +681,84 @@
             // Show relevant fields
             document.getElementById(structure + '-fields').classList.remove('hidden');
             
-            calculateComparison();
+            calculate();
         }
 
         function updateProfitPreview() {
-            const projectValue = parseFloat(document.getElementById('projectValue').value) || 0;
-            const totalCost = parseFloat(document.getElementById('totalCost').value) || 0;
-            const grossProfit = Math.max(0, projectValue - totalCost);
-            const profitMargin = projectValue > 0 ? ((grossProfit / projectValue) * 100) : 0;
+            var projectValue = parseFloat(document.getElementById('projectValue').value) || 0;
+            var totalCost = parseFloat(document.getElementById('totalCost').value) || 0;
+            var grossProfit = Math.max(0, projectValue - totalCost);
+            var profitMargin = projectValue > 0 ? ((grossProfit / projectValue) * 100) : 0;
             
             document.getElementById('gross-profit').textContent = grossProfit.toLocaleString();
             document.getElementById('profit-margin').textContent = profitMargin.toFixed(1) + '%';
         }
 
-        function calculateComparison() {
+        function calculate() {
             // Update profit preview
             updateProfitPreview();
             
             // Get basic project inputs
-            const projectValue = parseFloat(document.getElementById('projectValue').value) || 0;
-            const totalCost = parseFloat(document.getElementById('totalCost').value) || 0;
-            const constructionTime = parseFloat(document.getElementById('constructionTime').value) || 0;
-            const builderEquity = parseFloat(document.getElementById('builderEquity').value) || 0;
+            var projectValue = parseFloat(document.getElementById('projectValue').value) || 0;
+            var totalCost = parseFloat(document.getElementById('totalCost').value) || 0;
+            var constructionTime = parseFloat(document.getElementById('constructionTime').value) || 0;
+            var builderEquity = parseFloat(document.getElementById('builderEquity').value) || 0;
             
             // Update lender header
-            const lenderName = document.getElementById('lenderName').value || 'Bank/Lender';
+            var lenderName = document.getElementById('lenderName').value || 'Bank/Lender';
             document.getElementById('lender-header').textContent = lenderName;
             
             // Get lender terms
-            const lenderLoanAmount = parseFloat(document.getElementById('lenderLoanAmount').value) || 0;
-            const lenderRate = parseFloat(document.getElementById('lenderRate').value) || 0;
-            const lenderPoints = parseFloat(document.getElementById('lenderPoints').value) || 0;
-            const lenderFees = parseFloat(document.getElementById('lenderFees').value) || 0;
-            const lenderTerm = parseFloat(document.getElementById('lenderTerm').value) || 0;
+            var lenderLoanAmount = parseFloat(document.getElementById('lenderLoanAmount').value) || 0;
+            var lenderRate = parseFloat(document.getElementById('lenderRate').value) || 0;
+            var lenderPoints = parseFloat(document.getElementById('lenderPoints').value) || 0;
+            var lenderFees = parseFloat(document.getElementById('lenderFees').value) || 0;
+            var lenderTerm = parseFloat(document.getElementById('lenderTerm').value) || 0;
             
             // Calculate lender costs
-            const lenderInterest = (lenderLoanAmount * (lenderRate / 100) * (Math.max(constructionTime, lenderTerm) / 12));
-            const lenderOriginationFees = lenderLoanAmount * (lenderPoints / 100);
-            const lenderTotal = lenderInterest + lenderOriginationFees + lenderFees;
+            var lenderInterest = (lenderLoanAmount * (lenderRate / 100) * (Math.max(constructionTime, lenderTerm) / 12));
+            var lenderOriginationFees = lenderLoanAmount * (lenderPoints / 100);
+            var lenderTotal = lenderInterest + lenderOriginationFees + lenderFees;
             
             // Get investor terms
-            const investorStructure = document.getElementById('investorStructure').value;
-            const investorLoanAmount = parseFloat(document.getElementById('investorLoanAmount').value) || 0;
+            var investorStructure = document.getElementById('investorStructure').value;
+            var investorLoanAmount = parseFloat(document.getElementById('investorLoanAmount').value) || 0;
             
-            let investorInterest = 0;
-            let investorOriginationFees = 0;
-            let investorProfitShare = 0;
-            let investorTotal = 0;
+            var investorInterest = 0;
+            var investorOriginationFees = 0;
+            var investorProfitShare = 0;
+            var investorTotal = 0;
             
-            const grossProfit = Math.max(0, projectValue - totalCost);
+            var grossProfit = Math.max(0, projectValue - totalCost);
             
             // Calculate investor costs based on structure
-            switch(investorStructure) {
-                case 'profit-split':
-                    const profitSplitPercent = parseFloat(document.getElementById('profitSplitPercent').value) || 0;
-                    const guaranteedReturn = parseFloat(document.getElementById('guaranteedReturn').value) || 0;
-                    
-                    investorProfitShare = grossProfit * (profitSplitPercent / 100);
-                    const minimumReturn = investorLoanAmount * (guaranteedReturn / 100) * (constructionTime / 12);
-                    investorInterest = Math.max(minimumReturn, 0);
-                    break;
-                    
-                case 'interest-only':
-                    const investorRate = parseFloat(document.getElementById('investorRate').value) || 0;
-                    const investorPoints = parseFloat(document.getElementById('investorPoints').value) || 0;
-                    
-                    investorInterest = investorLoanAmount * (investorRate / 100) * (constructionTime / 12);
-                    investorOriginationFees = investorLoanAmount * (investorPoints / 100);
-                    break;
-                    
-                case 'hybrid':
-                    const hybridRate = parseFloat(document.getElementById('hybridRate').value) || 0;
-                    const hybridProfitSplit = parseFloat(document.getElementById('hybridProfitSplit').value) || 0;
-                    
-                    investorInterest = investorLoanAmount * (hybridRate / 100) * (constructionTime / 12);
-                    investorProfitShare = grossProfit * (hybridProfitSplit / 100);
-                    break;
+            if (investorStructure === 'profit-split') {
+                var profitSplitPercent = parseFloat(document.getElementById('profitSplitPercent').value) || 0;
+                var guaranteedReturn = parseFloat(document.getElementById('guaranteedReturn').value) || 0;
+                
+                investorProfitShare = grossProfit * (profitSplitPercent / 100);
+                var minimumReturn = investorLoanAmount * (guaranteedReturn / 100) * (constructionTime / 12);
+                investorInterest = Math.max(minimumReturn, 0);
+            } else if (investorStructure === 'interest-only') {
+                var investorRate = parseFloat(document.getElementById('investorRate').value) || 0;
+                var investorPoints = parseFloat(document.getElementById('investorPoints').value) || 0;
+                
+                investorInterest = investorLoanAmount * (investorRate / 100) * (constructionTime / 12);
+                investorOriginationFees = investorLoanAmount * (investorPoints / 100);
+            } else if (investorStructure === 'hybrid') {
+                var hybridRate = parseFloat(document.getElementById('hybridRate').value) || 0;
+                var hybridProfitSplit = parseFloat(document.getElementById('hybridProfitSplit').value) || 0;
+                
+                investorInterest = investorLoanAmount * (hybridRate / 100) * (constructionTime / 12);
+                investorProfitShare = grossProfit * (hybridProfitSplit / 100);
             }
             
-            const investorFees = parseFloat(document.getElementById('investorFees').value) || 0;
+            var investorFees = parseFloat(document.getElementById('investorFees').value) || 0;
             investorTotal = investorInterest + investorOriginationFees + investorProfitShare + investorFees;
             
             // Calculate builder profits
-            const lenderBuilderProfit = grossProfit - lenderTotal;
-            const investorBuilderProfit = grossProfit - investorTotal;
+            var lenderBuilderProfit = grossProfit - lenderTotal;
+            var investorBuilderProfit = grossProfit - investorTotal;
             
             // Update display
             document.getElementById('lender-loan-display').textContent = ' + lenderLoanAmount.toLocaleString();
@@ -794,9 +782,9 @@
             document.getElementById('investor-builder-profit').textContent = ' + investorBuilderProfit.toLocaleString();
             
             // Calculate and display recommendation
-            const profitDifference = lenderBuilderProfit - investorBuilderProfit;
-            const winnerCard = document.getElementById('winner-card');
-            const differenceCard = document.getElementById('difference-card');
+            var profitDifference = lenderBuilderProfit - investorBuilderProfit;
+            var winnerCard = document.getElementById('winner-card');
+            var differenceCard = document.getElementById('difference-card');
             
             document.getElementById('savings-amount').textContent = ' + Math.abs(profitDifference).toLocaleString();
             
@@ -804,29 +792,29 @@
                 winnerCard.className = 'summary-card winner-card';
                 differenceCard.className = 'summary-card winner-card';
                 document.getElementById('recommendation').textContent = lenderName;
-                document.getElementById('recommendation-reason').textContent = `This option makes you more money`;
-                document.getElementById('savings-description').textContent = `More profit than private investor`;
+                document.getElementById('recommendation-reason').textContent = 'This option makes you more money';
+                document.getElementById('savings-description').textContent = 'More profit than private investor';
             } else if (profitDifference < -1000) {
                 winnerCard.className = 'summary-card loser-card';
                 differenceCard.className = 'summary-card winner-card';
                 document.getElementById('recommendation').textContent = 'Private Investor';
-                document.getElementById('recommendation-reason').textContent = `This option makes you more money`;
-                document.getElementById('savings-description').textContent = `More profit than ${lenderName.toLowerCase()}`;
+                document.getElementById('recommendation-reason').textContent = 'This option makes you more money';
+                document.getElementById('savings-description').textContent = 'More profit than ' + lenderName.toLowerCase();
             } else {
                 winnerCard.className = 'summary-card';
                 differenceCard.className = 'summary-card';
                 document.getElementById('recommendation').textContent = 'Very Close!';
-                document.getElementById('recommendation-reason').textContent = `Both options are similar`;
-                document.getElementById('savings-description').textContent = `Consider other factors`;
+                document.getElementById('recommendation-reason').textContent = 'Both options are similar';
+                document.getElementById('savings-description').textContent = 'Consider other factors';
             }
             
             // Calculate ROI on builder's investment
-            const betterProfit = Math.max(lenderBuilderProfit, investorBuilderProfit);
-            const roi = builderEquity > 0 ? ((betterProfit / builderEquity) * 100) : 0;
+            var betterProfit = Math.max(lenderBuilderProfit, investorBuilderProfit);
+            var roi = builderEquity > 0 ? ((betterProfit / builderEquity) * 100) : 0;
             document.getElementById('roi-display').textContent = roi.toFixed(1) + '%';
             
             // Update ROI description based on performance
-            let roiDescription = '';
+            var roiDescription = '';
             if (roi >= 50) {
                 roiDescription = '🔥 Excellent return!';
             } else if (roi >= 25) {
@@ -840,4 +828,26 @@
             }
             document.getElementById('roi-description').textContent = roiDescription;
         }
+
+        // Add event listeners when page loads
+        window.onload = function() {
+            // Add event listeners to all inputs
+            var inputs = document.querySelectorAll('input, select');
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].addEventListener('input', calculate);
+                inputs[i].addEventListener('change', function() {
+                    if (this.id === 'investorStructure') {
+                        toggleInvestorFields();
+                    } else {
+                        calculate();
+                    }
+                });
+            }
+            
+            // Initial calculations
+            toggleInvestorFields();
+            calculate();
+        };
     </script>
+</body>
+</html>
